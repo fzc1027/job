@@ -1,0 +1,66 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    "pages/citys/citys"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#477CFE",
+    "navigationBarTitleText": "蓝领之家",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#1AA378",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "selectedIconPath": "images/ahw.png",
+        "iconPath": "images/ahw.png",
+        "pagePath": "pages/storageConsole/storageConsole",
+        "text": "圈子"
+      },
+      {
+        "selectedIconPath": "images/today_p.png",
+        "iconPath": "images/today.png",
+        "pagePath": "pages/index/index",
+        "text": "招聘"
+      },
+      {
+        "selectedIconPath": "images/us_p.png",
+        "iconPath": "images/us.png",
+        "pagePath": "pages/im/im",
+        "text": "员工"
+      },
+      {
+        "selectedIconPath": "images/me_p.png",
+        "iconPath": "images/me.png",
+        "pagePath": "pages/userConsole/userConsole",
+        "text": "我"
+      }
+      
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

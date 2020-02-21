@@ -14,41 +14,42 @@
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
     "pages/im/room/room",
-    "pages/citys/citys"
+    "pages/citys/citys",
+    "pages/search/search"
   ],
   "window": {
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#477CFE",
     "navigationBarTitleText": "蓝领之家",
-    "navigationBarTextStyle": "white",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle": "white"
+    
   },
   "tabBar": {
     "color": "#000000",
-    "selectedColor": "#1AA378",
-    "backgroundColor": "#ffffff",
+    "selectedColor": "#477cfe",
+    "backgroundColor": "#fff",
     "list": [
       {
-        "selectedIconPath": "images/ahw.png",
-        "iconPath": "images/ahw.png",
+        "selectedIconPath": "images/chatselect.png",
+        "iconPath": "images/chat.png",
         "pagePath": "pages/storageConsole/storageConsole",
         "text": "圈子"
       },
       {
-        "selectedIconPath": "images/today_p.png",
-        "iconPath": "images/today.png",
+        "selectedIconPath": "images/zhaopinselect.png",
+        "iconPath": "images/zhaopin.png",
         "pagePath": "pages/index/index",
         "text": "招聘"
       },
       {
-        "selectedIconPath": "images/us_p.png",
-        "iconPath": "images/us.png",
+        "selectedIconPath": "images/workerselect.png",
+        "iconPath": "images/worker.png",
         "pagePath": "pages/im/im",
         "text": "员工"
       },
       {
-        "selectedIconPath": "images/me_p.png",
+        "selectedIconPath": "images/meselect.png",
         "iconPath": "images/me.png",
         "pagePath": "pages/userConsole/userConsole",
         "text": "我"

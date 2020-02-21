@@ -1,11 +1,11 @@
 <!--index.wxml-->
 
   <view class="search-container">
-            <view class="search-input">
+            <view class="search-input"  bindtap="Tabsearch">
                 <i>
                     <image src="../../images/ati.png" />
                 </i>
-                <input type="text" placeholder-class="place-holder" placeholder="搜索" />
+                <view type="text" class="place-holder" placeholder="搜索" >搜索</view>
             </view>
             <view class="jobwant">
                 <text class="jobwant-name">我要招聘</text>
@@ -27,29 +27,68 @@
   <view class="navList2">   
           <navigator url="/pages/citys/citys" hover-class="navigator-hover">  
             <view class="nav-item">
-                <image class="nav-icon" src="{{item.image}}" />
+                <image class="nav-icon" src="/images/chengshi.png" />
                 <text class="nav-name">{{city}}</text>
             </view>
           </navigator> 
-            <view class="nav-item">
-                <image class="nav-icon" src="{{item.image}}" />
-                <text class="nav-name">职位</text>
+            <view class="nav-item"  >
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{jobIndex}}" range="{{jobArray}}" class='jobselect'>
+                    <image class="nav-icon" src="/images/zhiwei.png" />
+                    <text class="nav-name">{{job[2]}}</text>
+                </picker>
+            </view>
+            <view class="nav-item"  catchtap='dropdownTap'>
+                <image class="nav-icon" src="/images/gongsixinxi.png" />
+                <text class="nav-name">{{gs}}</text>
             </view>
             <view class="nav-item">
-                <image class="nav-icon" src="{{item.image}}" />
-                <text class="nav-name">公司</text>
-            </view>
-            <view class="nav-item">
-                <image class="nav-icon" src="{{item.image}}" />
+                <image class="nav-icon" src="/images/qian.png" />
                 <text class="nav-name">薪资</text>
             </view>
   </view>
+ 
   
+<!--公司拉框选项 -->
+<view class='sort{{upordown}}' hidden='{{sort_hidden}}'>
+  <view class='gscontainer'>
+    <text class='gstitle'>公司名称</text>
+    <view class="search-container">
+            <view class="search-input"  >
+                <i>
+                    <image src="../../images/ati.png" />
+                </i>
+                <input type="text" placeholder-class="place-holder" placeholder="搜索" />
+            </view>
+            
+    </view>
+  </view>
+  <view class='gscontainer'>
+    <text class='gstitle'>历史搜索</text>
+    <view class="gstab">  
+      <view wx:for="{{gstab[0]}}" wx:for-item="item" wx:key="id"wx:for-items="{{gstab[0]}}" data-id="{{item.name}}" data-value="0"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='gstab'>
+                
+                <text class="nav-name"  >{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='gscontainer'>
+    <text class='gstitle'>热门搜索</text>
+    <view class="gstab">  
+      <view wx:for="{{gstab[1]}}" wx:for-item="item" wx:key="id"wx:for-items="{{gstab[1]}}" data-id="{{item.name}}" data-value="1"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='gstab' >
+                
+                <text class="nav-name"  >{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+    
+</view>
+<!-- 遮罩层 -->
+<view class='zhezhao' hidden='{{zhezhao}}' catchtouchmove="move"style="position: fixed; top: {{zhezhaotop}}px;"></view>
  
 <!--滚动tab-->
 
-    <scroll-view scroll-y="true" style="height: 930rpx;" class="scroll" >
-          <view wx:for="{{demo}}" id="demo1" class="scroll-view-item "></view>
+    <scroll-view scroll-y="true" style="height: {{scrollheight}}px;" class="scroll" >
+          <view wx:for="{{demo}}" id="demo1" class="scroll-view-item ">{{scrollheight}}</view>
          
     </scroll-view>
 

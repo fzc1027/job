@@ -1,0 +1,9 @@
+<view class="search-container">
+            <view class="search-input"  bindtap="Tabsearch">
+                <i>
+                    <image src="../../images/ati.png" />
+                </i>
+                <input type="text" placeholder-class="place-holder" placeholder="搜索" />
+            </view>
+            
+  </view>

@@ -157,22 +157,12 @@ border-radius: 5rpx;
   flex-wrap:wrap;
 }
 
-/* gundong*/
-.scroll{
-  width:100%;
-
-}
-.scroll .scroll-view-item{
-  width:100%;
-  height:300rpx;
-  background-color: #fc3;
-  margin-bottom: 5rpx;
-  color: #000;
-}
 
 
 /* 公司下拉 */
-
+.sortup{
+  width:100%;
+}
 .sort{
   border:1rpx #a9a9a9 solid;
 overflow: hidden;
@@ -184,17 +174,17 @@ top: 160rpx;
 background-color: white;
 
 }
-.up{
+.sort .up{
 animation-name:slidown; /*名称*/
 animation-duration:0.3s; /*持续时间*/
 animation-timing-function:linear; /*播放动画时从头到尾都以相同的速度*/
 }
-.down{
+.sort .down{
 animation-name:slidup; /*名称*/
 animation-duration:0.3s; /*持续时间*/
 animation-timing-function:linear; /*播放动画时从头到尾都以相同的速度*/
 }
-.sort view{
+.sort .sort view{
 border:1rpx #a9a9a9 solid;
 height: 160rpx;
 line-height: 80rpx;
@@ -203,7 +193,7 @@ font-family:PingFangSC-Regular;
 font-weight:400;
 color:rgba(51,51,51,1);
 }
-.dropdown_active{
+.sort .dropdown_active{
 color:rgba(20,130,240,1);
 }
 
@@ -228,7 +218,6 @@ transform: translateY(-100%);
 
 /* 蒙层消失 */
 .zhezhao{
-
 left: 0;
 z-index: 99;
 width: 100%;
@@ -290,10 +279,11 @@ opacity:0.5;
 .gstab {
   margin-top: 5rpx;
   width:100%;
+  box-sizing: border-box;
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-left: 50rpx;
+  padding-left: 50rpx;
   align-items: flex-end;
   background-color:#fff;
   position: relative;
@@ -331,4 +321,497 @@ opacity:0.5;
   font-size: 30rpx;
 }
 
+/*薪资标签样式*/
 
+.xinzicontainer{
+  width: 100%;
+  box-sizing: border-box;
+}
+.xinzititle{
+  padding-left: 50rpx;
+  font-size: 30rpx;
+}
+
+/**/
+.xinzitab {
+  margin-top: 5rpx;
+  width:100%;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  align-items: flex-end;
+  background-color:#fff;
+  position: relative;
+  padding-left: 50rpx;
+}
+
+.xinzitab .nav-itemno{
+  border: 1px #e0e0e0 solid;
+  height: 50rpx;
+  width: 25%;
+  display: flex;
+	flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  background-color:#fff;
+  margin-bottom: 10rpx;
+ 
+  color: #000;
+  margin-right: 50rpx;
+}
+.xinzitab .nav-item{
+  height: 50rpx;
+  width: 25%;
+  display: flex;
+	flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  background-color:#477cfe;
+  margin-bottom: 10rpx;
+  border-radius: 5rpx;
+  
+  color:#fff;
+  margin-right: 50rpx;
+}
+.gstab .nav-name{
+  
+  font-size: 30rpx;
+}
+/*薪资选择*/
+.qianselect{
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end;
+}
+.qianconcel{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.qiansure{
+  height: 100%;
+  width:60%;
+  background-color: #477cfe;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+/*滑块*/
+
+
+.sliderHCon {
+
+  height: 250rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ /*滑块上方标识*/
+
+.MoneyValue {
+  font-size: 22rpx;
+  text-align: center;
+  color: #666;
+  margin-top: 15rpx;
+}
+
+.showMoney {
+  display: flex;
+  justify-content: space-between;
+   width: 80%;
+  position: absolute;
+  color: #666;
+  font-size: 22rpx;
+
+}
+.showMoneypage{
+  display:flex;
+  width: 10%;
+  flex-direction: culum;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.MoneyValue  {
+  width:100%;
+  color:#477cfe;
+}
+/*滑块样式*/
+.twoSlider {
+  width: 100%;
+  height:100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.twoSlider .leftSliderPrice {
+  position: absolute;
+  top: -34rpx;
+  left: 0;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+  text-align: center;
+  color: #FFF;
+
+}
+
+.sliderPrice view {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+  font-size: 22rpx;
+
+}
+
+.twoSlider .rightSliderPrice {
+  position: absolute;
+  top: -34rpx;
+  right: 0;
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+  text-align: center;
+  color: #FFF;
+
+}
+
+
+/* 滑动样式 */
+
+.select-construct{
+
+  width: 100%;
+  margin-top: 50rpx;
+}
+
+.select-area{
+  width: 84%;
+  padding-left:8%;
+  padding-right:8%; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-container{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex; 
+  position: relative;
+
+}
+
+.slider-right{
+ margin-left: -8rpx;
+}
+/*薪资下拉 */
+.xinzisortup{
+  width:100%;
+}
+.xinzisort{
+  border:1rpx #a9a9a9 solid;
+overflow: hidden;
+width: 100%;
+margin-right: 50rpx;
+position: absolute;
+left: 0;
+top: 160rpx;
+background-color: white;
+
+}
+.xinzisort .up{
+animation-name:slidown; /*名称*/
+animation-duration:0.3s; /*持续时间*/
+animation-timing-function:linear; /*播放动画时从头到尾都以相同的速度*/
+}
+.xinzisort .down{
+animation-name:slidup; /*名称*/
+animation-duration:0.3s; /*持续时间*/
+animation-timing-function:linear; /*播放动画时从头到尾都以相同的速度*/
+}
+.xinzisort .xinzisort view{
+border:1rpx #a9a9a9 solid;
+height: 160rpx;
+line-height: 80rpx;
+font-size:28rpx;
+font-family:PingFangSC-Regular;
+font-weight:400;
+color:rgba(51,51,51,1);
+}
+.xinzisort .dropdown_active{
+color:rgba(20,130,240,1);
+}
+
+/* css3下拉特效 */
+@keyframes slidown{
+from{
+transform: translateY(-100%);
+}
+to{
+transform: translateY(0%);
+}
+}
+
+@keyframes slidup{
+from{
+transform: translateY(0%);
+}
+to{
+transform: translateY(-100%);
+}
+}
+
+/* 蒙层消失 */
+.xinzizhezhao{
+left: 0;
+z-index: 99;
+width: 100%;
+height: 100%;
+background-color:#000;
+opacity:0.5;
+}
+
+/*滚动信息页*/
+.scroll{
+  width:100%;
+
+}
+.xinxijustyfy{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-top: 10rpx;
+  padding-left: 1%;
+  padding-right: 1%;
+
+}
+.scroll .scroll-view-item{
+  border: 1rpx #477CFE solid;
+  border-radius: 20rpx;
+  width:49%;
+  
+  background-color:#fff;
+  margin-bottom: 5rpx;
+  color: #000;
+  display: flex;
+  flex-direction: culum;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.imagesshangjin{
+  border: 1rpx #477CFE solid;
+  border-top-left-radius:20rpx;
+  border-top-right-radius: 20rpx;
+  width:100%;
+  position: relative;  
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-start;
+}
+.gongchangimages{
+  
+  width: 100%;
+  border-top-left-radius:20rpx;
+  border-top-right-radius: 20rpx;
+}
+.imagesshangjin .shangjin{
+  border: 1rpx #477CFE solid;
+  width: 60%;
+  height: 50rpx;
+  position:absolute;
+  border-top-right-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+/*公司说明*/
+.gsshuoming{
+  border: 1rpx #477CFE solid;
+  width: 100%;
+  height: 300rpx;
+}
+.gongsiname{
+  height:60rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: culum;
+  align-items: center;
+
+}
+.gongsiname text{
+  padding-left:10rpx;
+  font-size:40rpx;
+}
+.jobmoney{
+  height:50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: culum;
+  align-items: center;
+
+}
+.jobmoney text{
+  padding-left:10rpx;
+  font-size:30rpx;
+  color:#d13b34;
+}
+.jobdaiyu{
+  width:100%;
+  height:40rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  
+}
+.jobdaiyu .wuxianyijin{
+  border: 1rpx #d13b34 solid;
+  width:100rpx;
+  height:30rpx;
+  margin-left:10rpx;
+  color:#d13b34;
+  font-size:20rpx;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.jobdaiyu .baozhusu{
+   margin-left:10rpx;
+   border: 1rpx #d13b34 solid;
+   width:70rpx;
+    height:30rpx;
+   color:#d13b34;
+  font-size:20rpx;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.jobdaiyu .xinyong{
+   margin-left:10rpx;
+   width:150rpx;
+  height:30rpx;
+  color:#477CFE;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;
+}
+
+.jobrequire{
+  width:100%;
+  height:40rpx;
+  display: flex;
+  flex-direction: row;
+  
+}
+.jobrequire .date{
+  width:100rpx;
+  height:30rpx;
+  margin-left:10rpx;
+  color:#a9a9a9;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;  
+}
+.jobrequire .sex{
+   margin-left:10rpx;
+   width:100rpx;
+    height:30rpx;
+   color:#a9a9a9;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;
+}
+.jobrequire .age{
+   margin-left:10rpx;
+   width:120rpx;
+  height:30rpx;
+  color:#a9a9a9;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;
+}
+
+.gongchangweizhi{
+  width:100%;
+  height:30rpx;
+  display: flex;
+  flex-direction: row;
+  
+}
+.gongchangweizhi .dizhi{
+  width:200rpx;
+  height:30rpx;
+  margin-left:10rpx;
+  color:#a9a9a9;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;  
+}
+
+.gongchangweizhi .juli{
+   margin-left:10rpx;
+   width:120rpx;
+  height:30rpx;
+  color:#a9a9a9;
+  font-size:20rpx;
+  display: flex;
+  align-items:flex-end;
+}
+
+.apply{
+  
+  width:100%;
+  height:80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.apply  .shenqing{
+  width:45%;
+  height:50rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  background-color: #477CFE;
+  color:#FFF;
+  border-radius: 7rpx;
+  font-size:30rpx;
+}
+.apply  .tuijian{
+  width:45%;
+  height:50rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  color:#477CFE;
+  border-radius: 7rpx;
+  font-size:30rpx;
+}

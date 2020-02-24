@@ -24,15 +24,13 @@
           
   </view>
   <!-- 导航 -->
-  <view class="navList2">   
-          <navigator url="/pages/citys/citys" hover-class="navigator-hover">  
-            <view class="nav-item">
+  <view class="navList2">             
+            <view class="nav-item" bindtap="clickcitys">
                 <image class="nav-icon" src="/images/chengshi.png" />
                 <text class="nav-name">{{city}}</text>
-            </view>
-          </navigator> 
+            </view>         
             <view class="nav-item"  >
-                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{jobIndex}}" range="{{jobArray}}" class='jobselect'>
+                <picker mode="multiSelector"bindtap="clickjob" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{jobIndex}}" range="{{jobArray}}" class='jobselect'>
                     <image class="nav-icon" src="/images/zhiwei.png" />
                     <text class="nav-name">{{job[2]}}</text>
                 </picker>
@@ -41,9 +39,9 @@
                 <image class="nav-icon" src="/images/gongsixinxi.png" />
                 <text class="nav-name">{{gs}}</text>
             </view>
-            <view class="nav-item">
+            <view class="nav-item"  catchtap='xinzidropdownTap'>
                 <image class="nav-icon" src="/images/qian.png" />
-                <text class="nav-name">薪资</text>
+                <text class="nav-name">{{xinzi}}</text>
             </view>
   </view>
  
@@ -74,8 +72,7 @@
   <view class='gscontainer'>
     <text class='gstitle'>热门搜索</text>
     <view class="gstab">  
-      <view wx:for="{{gstab[1]}}" wx:for-item="item" wx:key="id"wx:for-items="{{gstab[1]}}" data-id="{{item.name}}" data-value="1"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='gstab' >
-                
+      <view wx:for="{{gstab[1]}}" wx:for-item="item" wx:key="id"wx:for-items="{{gstab[1]}}" data-id="{{item.name}}" data-value="1"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='gstab' >                
                 <text class="nav-name"  >{{item.value}}</text>
       </view>
     </view>
@@ -84,13 +81,132 @@
 </view>
 <!-- 遮罩层 -->
 <view class='zhezhao' hidden='{{zhezhao}}' catchtouchmove="move"style="position: fixed; top: {{zhezhaotop}}px;"></view>
- 
-<!--滚动tab-->
 
-    <scroll-view scroll-y="true" style="height: {{scrollheight}}px;" class="scroll" >
-          <view wx:for="{{demo}}" id="demo1" class="scroll-view-item ">{{scrollheight}}</view>
-         
-    </scroll-view>
+<!--薪资拉框选项 -->
+<view class='xinzisort{{xinziupordown}}' hidden='{{xinzisort_hidden}}'>
+  
+  <view class='xinzicontainer'>
+    <text class='xinzititle'>月薪范围</text>
+    
+<view class='sliderHCon'>
+  <view class='showMoney'>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥{{min}}</text>
+      <text class='dot'>.</text>
+    </view>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥2000</text>
+      <text class='dot'>.</text>
+    </view>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥4000</text>
+      <text class='dot'>.</text>
+    </view>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥6000</text>
+      <text class='dot'>.</text>
+    </view>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥8000</text>
+      <text class='dot'>.</text>
+    </view>
+    <view class='showMoneypage'>
+      <text class='MoneyValue'>￥{{max}}</text>
+      <text class='dot'>.</text>
+    </view>
+
+  </view>
+  <view class='twoSlider'>
+    <view class='select-construct'>
+      <view class='select-area'>
+        <view class='slider-container'>          
+          <slider style='width:{{slider1W+"%"}}' class='slider-left' min='{{min}}' max='{{slider1Max}}' color='#a9a9a9' selected-color='#e5e5e5' bindchanging='changing' catchtouchstart='changeStart' bindchange='changed' data-idx='1'></slider>
+          <slider wx:if='{{!change}}' style='width:{{slider2W+"%"}}' class='slider-right' min='{{slider2Min}}' max='{{max}}' color='#e5e5e5'  selected-color='#a9a9a9' bindchanging='changing'catchtouchstart='changeStart'  bindchange='changed' data-idx='2'></slider>
+        </view>
+      </view>
+    </view>
+    <view class="Moneyshow">￥{{slider1Value}}-￥{{slider2Value}}
+    </view>
+  </view>
+
+</view>
+
+    <view class="xinzitab">  
+      <view wx:for="{{xinzitab}}" wx:for-item="item" wx:key="id"wx:for-items="{{xinzitab}}" data-id="{{item.name}}"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='xinzitab'>               
+                <text class="nav-name"  >{{item.value}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="qianselect">
+    <view class="qianconcel" bindtap="resetmoney">重置
+    </view>
+    <view class="qiansure"  bindtap="suremoney">确定
+    </view>
+  </view>
+    
+</view>
+<!-- 遮罩层 -->
+<view class='xinzizhezhao' hidden='{{xinzizhezhao}}' catchtouchmove="xinzimove"style="position: fixed; top: {{zhezhaotop}}px;"></view>
+ 
+<!-- 信息页 -->
+<scroll-view scroll-y="true" style="height: {{scrollheight}}px;" class="scroll" >
+  <view class="xinxijustyfy">
+    <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"    class="scroll-view-item " bindtap="gongchangclick">
+        <view class="imagesshangjin">
+            <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
+            <view class="shangjin" >赏金1000元</view>
+        </view>
+        <view class="gsshuoming">
+       
+          <view class="gongsiname">
+            <text>工厂名称</text>
+          </view>
+          <view class="jobmoney">
+            <text>工种        工资</text>
+            <text>/月起</text>
+          </view>
+          <view class="jobdaiyu">
+            <view class="wuxianyijin">
+              <text>五险一金</text>
+            </view>
+            <view class="baozhusu">
+              <text>包住宿</text>
+            </view>
+            <view class="xinyong">
+              信用
+            </view>
+          </view>          
+          <view class="jobrequire">
+            <view class="date">
+              <text>日期</text>
+            </view>
+            <view class="sex">
+              <text>性别要求</text>
+            </view>
+            <view class="age">
+              年纪要求
+            </view>
+          </view>
+          <view class="gongchangweizhi">
+            <view class="dizhi">
+              <text>工厂地址</text>
+            </view>
+            <view class="juli">
+              距离
+            </view>
+          </view>
+          <view class="apply">
+            <view class="shenqing">
+              <text>申请职位</text>
+            </view>
+            <view class="tuijian">
+              推荐赚赏金
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>       
+</scroll-view>
 
       
            

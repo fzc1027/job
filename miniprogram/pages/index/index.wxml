@@ -150,60 +150,118 @@
  
 <!-- 信息页 -->
 <scroll-view scroll-y="true" style="height: {{scrollheight}}px;" class="scroll" >
-  <view class="xinxijustyfy">
-    <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"    class="scroll-view-item " bindtap="gongchangclick">
-        <view class="imagesshangjin">
-            <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
-            <view class="shangjin" >赏金1000元</view>
-        </view>
-        <view class="gsshuoming">
-       
-          <view class="gongsiname">
-            <text>工厂名称</text>
+  <view class="xinzijustyfy">
+    <view class="culum1">
+      <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"   wx:if="{{id%2==0}}" class="scroll-view-item " bindtap="gongchangclick">
+          <view class="imagesshangjin">
+              <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
+              <view class="shangjin" >赏金1000元</view>
           </view>
-          <view class="jobmoney">
-            <text>工种        工资</text>
-            <text>/月起</text>
+          <view class="gsshuoming">
+        
+            <view class="gongsiname">
+              <text>工厂名称</text>
+            </view>
+            <view class="jobmoney">
+              <text>工种        工资</text>
+              <text>/月起</text>
+            </view>
+            <view class="jobdaiyu">
+              <view class="wuxianyijin">
+                <text>五险一金</text>
+              </view>
+              <view class="baozhusu">
+                <text>包住宿</text>
+              </view>
+              <view class="xinyong">
+                信用
+              </view>
+            </view>          
+            <view class="jobrequire">
+              <view class="date">
+                <text>日期</text>
+              </view>
+              <view class="sex">
+                <text>性别要求</text>
+              </view>
+              <view class="age">
+                年纪要求
+              </view>
+            </view>
+            <view class="gongchangweizhi">
+              <view class="dizhi">
+                <text>工厂地址</text>
+              </view>
+              <view class="juli">
+                距离
+              </view>
+            </view>
+            <view class="apply">
+              <view class="shenqing" catchtap="apply">
+                <text>申请职位</text>
+              </view>
+              <view class="tuijian">
+                推荐赚赏金
+              </view>
+            </view>
           </view>
-          <view class="jobdaiyu">
-            <view class="wuxianyijin">
-              <text>五险一金</text>
+      </view>
+    </view>
+    <view class="culum2">
+      <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"   wx:if="{{id%2==1}}" class="scroll-view-item " bindtap="gongchangclick">
+          <view class="imagesshangjin">
+              <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
+              <view class="shangjin" >赏金1000元</view>
+          </view>
+          <view class="gsshuoming">
+        
+            <view class="gongsiname">
+              <text>工厂名称</text>
             </view>
-            <view class="baozhusu">
-              <text>包住宿</text>
+            <view class="jobmoney">
+              <text>工种        工资</text>
+              <text>/月起</text>
             </view>
-            <view class="xinyong">
-              信用
+            <view class="jobdaiyu">
+              <view class="wuxianyijin">
+                <text>五险一金</text>
+              </view>
+              <view class="baozhusu">
+                <text>包住宿</text>
+              </view>
+              <view class="xinyong">
+                信用
+              </view>
+            </view>          
+            <view class="jobrequire">
+              <view class="date">
+                <text>日期</text>
+              </view>
+              <view class="sex">
+                <text>性别要求</text>
+              </view>
+              <view class="age">
+                年纪要求
+              </view>
             </view>
-          </view>          
-          <view class="jobrequire">
-            <view class="date">
-              <text>日期</text>
+            <view class="gongchangweizhi">
+              <view class="dizhi">
+                <text>工厂地址</text>
+              </view>
+              <view class="juli">
+                距离
+              </view>
             </view>
-            <view class="sex">
-              <text>性别要求</text>
-            </view>
-            <view class="age">
-              年纪要求
+            <view class="apply">
+              <view class="shenqing" catchtap="apply">
+                <text>申请职位</text>
+              </view>
+              <view class="tuijian">
+                推荐赚赏金
+              </view>
             </view>
           </view>
-          <view class="gongchangweizhi">
-            <view class="dizhi">
-              <text>工厂地址</text>
-            </view>
-            <view class="juli">
-              距离
-            </view>
-          </view>
-          <view class="apply">
-            <view class="shenqing">
-              <text>申请职位</text>
-            </view>
-            <view class="tuijian">
-              推荐赚赏金
-            </view>
-          </view>
-        </view>
+      </view>
     </view>
   </view>       
 </scroll-view>

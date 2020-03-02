@@ -594,7 +594,7 @@ opacity:0.5;
   width:100%;
 
 }
-.xinxijustyfy{
+.xinzijustyfy{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -607,8 +607,7 @@ opacity:0.5;
 .scroll .scroll-view-item{
   border: 1rpx #477CFE solid;
   border-radius: 20rpx;
-  width:49%;
-  
+  width:100%;
   background-color:#fff;
   margin-bottom: 5rpx;
   color: #000;
@@ -814,4 +813,11 @@ opacity:0.5;
   color:#477CFE;
   border-radius: 7rpx;
   font-size:30rpx;
+}
+/*实现假瀑布屏操作*/
+.culum1{
+  width:49.5%;
+}
+.culum2{
+  width:49.5%;
 }

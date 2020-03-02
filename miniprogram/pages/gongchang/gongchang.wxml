@@ -1,3 +1,131 @@
-<!--miniprogram/pages/gongchang/gongchang.wxml-->
-<text>双汇集团是以肉类加工为主的大型食品企业，成立于1958年7月，总部在河南省漯河市。
-该企业拥有包括生猪养殖、生鲜猪肉、猪肉制品、分销与销售在内的完整猪肉产业链，并凭借独特的全球垂直一体化业务平台，在猪肉行业所有关键环节均独占鳌头。集团旗下子公司有：双汇物流、双汇养殖、双汇药业、双汇软件等。</text>
+<view class="all ">
+  <view class="gongchang">
+    <view class="gongchangshangbiao">
+    工厂商标
+    </view>
+    <view class="gongchangname">
+      <view class="gongchangmingcheng">
+    工厂名称
+      </view>
+      <view class="gongchangbiaoqian">
+        <view wx:for="{{biaoqian}}" wx:for-item="biaoqian" class="gongchangtab">
+          {{biaoqian}}
+        </view>
+      </view>
+    </view>
+    <view class="gongchangxinyong">
+      <view class="xinyong">
+        <text class="">
+        信用
+        </text>
+        <view class="xingji">
+          <view  class="xing">
+            <image src="/images/pinfen1.png" mode="widthFix" class="pinfen"></image>
+          </view>
+          <view  class="xing">
+            <image src="/images/pinfen1.png" mode="widthFix" class="pinfen"></image>
+          </view>
+          <view  class="xing">
+            <image src="/images/pinfen1.png" mode="widthFix" class="pinfen"></image>
+          </view>
+          <view  class="xing">
+            <image src="/images/pinfen1.png" mode="widthFix" class="pinfen"></image>
+          </view>
+          <view  class="xing">
+            <image src="/images/pinfen2.png" mode="widthFix" class="pinfen"></image>
+          </view>
+        </view>
+      </view>
+      
+      <view class="date">
+      2020.2.29发布
+      </view>
+    </view>
+  </view>
+  <view class="gongchangdaiyu">
+     <view class="jobmoney">
+              <text>工种        工资</text>
+              <text>/月起</text>
+      </view>
+      <view class="jobrequire">
+        <view class="date">
+          <text>日期</text>
+          </view>
+        <view class="sex">
+          <text>性别要求</text>
+        </view>
+        <view class="age">
+          年纪要求
+        </view>
+      </view>
+      <view class="gongchangweizhi">
+        <view class="dizhi">
+          <image src="/images/weizhi.png" mode="widthFix" class="weizhi"></image>
+          <text>工厂地址</text>
+        </view>
+        <view class="juli">
+           距离
+        </view>
+      </view>
+      <view class="tuijian">
+        <view class="wenzi">
+          <image src="/images/huo.png" mode="widthFix" class="huo"></image>
+          <text>推荐职位获得赏金</text>
+        </view>
+        <view class="tuijianmoney">
+         ￥1-￥10  
+        </view>
+      </view>
+      <view class="tuijian">
+        <view class="wenzi">
+        <image src="/images/huo.png" mode="widthFix" class="huo"></image>
+          <text>推荐职位成功获得赏金</text>
+        </view>
+        <view class="tuijianmoney">
+           ￥100
+        </view>
+      </view>
+  </view>
+  <view class="gongchangjianzhang" >
+    <view class="jianzhang">招聘简章</view>
+   
+    <text class="pay-hint-content {{ellipsis?'ellipsis':'unellipsis'}}" >1. 支付成功后，将会推送排队号；就诊当日可直接前往诊室等待叫号就诊，无需再现场缴费、排队。\n2. 已完成支付挂号费用的用户，如在就诊前一日取消预约订单，成功申请取消订单后，正常情况下系统将会在7个工作日内自动退费至用户支付账号内。\n3. 订单在正常状态下（非系统故障、非医生临时停诊）被爽约，由于占用了医院号源，此类订单不予以退费。
+    </text>
+    <view class='readmore' bindtap='ellipsis'>
+    {{readmore}}
+    </view>
+  </view>
+  <view class="gangweitupian">
+    <view class="gangweititle">岗位图片</view>
+    <view class="tupian">
+      <view class="culum1">
+        <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"   wx:if="{{id%2==0}}" class="scroll-view-item " >
+            <view class="imagesshangjin">
+                <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
+            </view>
+        </view>
+      </view>
+      <view class="culum2">
+        <view wx:for="{{demo}}"  wx:for-index="id" wx:for-item="demo"   wx:if="{{id%2==1}}" class="scroll-view-item " >
+            <view class="imagesshangjin">
+                <image class="gongchangimages" mode="widthFix" src="{{demo.src}}" />
+            </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="apply">
+              <view class="shenqing" bindtap="apply">
+                <text>申请职位</text>
+              </view>
+              <view class="tuijian">
+                推荐赚赏金
+              </view>
+  </view>
+  <view class="zhuanfa">
+   <image src="/images/yijianzhuanfa.png" mode="widthFix" class="yijianzhuanfa"></image>
+  </view>
+  <view class="guanzhu" bindtap="dianzan">
+    <image src="{{diansrc}}" mode="widthFix" class="dianzan"></image>
+  </view>
+</view>

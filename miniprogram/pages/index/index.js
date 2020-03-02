@@ -92,10 +92,12 @@ Page({
   },
   //城市函数
   clickcitys:function(){
+    let city = this.data.city
     this.recover_hidden()
     this.xinzirecover_hidden()
+    console.log('../search/search?id=' + city)
     wx.navigateTo({
-      url: '../citys/citys',
+      url: '../citys/citys?city='+city,
     })
   },
   
@@ -485,6 +487,12 @@ Page({
       url: '../gongchang/gongchang',
     })
 
+  },
+  //申请职位函数
+  apply: function () {
+    wx.navigateTo({
+      url: '../apply/apply',
+    })
   },
   // scoll重置高度函数
 

@@ -1,5 +1,6 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
@@ -13,9 +14,11 @@
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
     "pages/im/room/room",
-    "pages/citys/citys",
     "pages/search/search",
-    "pages/gongchang/gongchang"
+    "pages/gongchang/gongchang",
+    "pages/citys/citys",
+    "pages/apply/apply"
+    
   ],
   "window": {
     "backgroundColor": "#ffffff",

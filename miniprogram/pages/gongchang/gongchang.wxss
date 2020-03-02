@@ -1,1 +1,426 @@
 /* miniprogram/pages/gongchang/gongchang.wxss */
+.all{
+  width:100%;
+  background-color:#f7f7ff;
+  display: flex;
+  flex-direction: culum;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*工厂一级标签*/
+.gongchang{
+  width:96%;
+  height:180rpx;
+  background-color:#fff;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px gainsboro;
+
+}
+.gongchangshangbiao{
+  width:150rpx;
+  height: 150rpx;
+  border:1rpx #eee solid;
+}
+.gongchangname{
+  width: 45%;
+  height: 150rpx;
+  border:1rpx #eee solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gongchangmingcheng{
+  width:100%;
+  height: 50%;
+  font-size: 40rpx;
+  border:1rpx #eee solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gongchangbiaoqian{
+  width:100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gongchangtab{
+  width: 30%;
+  height:30rpx;
+  background-color: #eee;
+  border-radius: 20rpx;
+  border:1rpx #eee solid;
+  font-size: 20rpx;
+  color:#fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rpx;
+}
+.gongchangxinyong{
+  width: 30%;
+  height: 150rpx;
+  border:1rpx #eee solid;
+}
+.xinyong{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+.xinyong text{
+  color:#477cfe;
+  width:30%;
+}
+.xingji{
+  width: 60%;
+  border:1rpx #eee solid;
+  display: flex;
+  flex-direction: row;
+
+}
+.xing{
+  width: 20%;
+}
+.pinfen{
+  width: 100%;
+  height: 100%;
+}
+.date{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:#eee;
+}
+/*工厂介绍页*/
+.gongchangdaiyu{
+  width:96%;
+  height:300rpx;
+  background-color:#fff;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: culum;
+  align-content: flex-start;
+  box-shadow: 5px 5px 5px gainsboro;
+}
+.jobmoney{
+  height:80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: culum;
+  align-content: center;
+  border:1rpx #eee solid;
+
+}
+.jobmoney text{
+  padding-left:20rpx;
+  font-size:50rpx;
+  color:#cf3c35;
+}
+
+
+.jobrequire{
+  width:100%;
+  height:50rpx;
+  display: flex;
+  flex-direction: row;
+  border:1rpx #eee solid;
+  
+}
+.jobrequire .date{
+  width:100rpx;
+  height:50rpx;
+  margin-left:20rpx;
+  color:#000;
+  font-size:30rpx;
+  display: flex;
+  align-items:flex-end;  
+}
+.jobrequire .sex{
+   margin-left:10rpx;
+   width:150rpx;
+    height:50rpx;
+   color:#000;
+  font-size:30rpx;
+  display: flex;
+  align-items:flex-end;
+}
+.jobrequire .age{
+   margin-left:10rpx;
+   width:150rpx;
+  height:50rpx;
+  color:#000;
+  font-size:30rpx;
+  display: flex;
+  align-items:flex-end;
+}
+
+.gongchangweizhi{
+  width:100%;
+  height:50rpx;
+  display: flex;
+  flex-direction: row;
+  border:1rpx #eee solid;
+}
+.weizhi{
+  width:30rpx; 
+
+}
+.gongchangweizhi .dizhi{
+  width:200rpx;
+  height:50rpx;
+  margin-left:20rpx;
+  color:#000;
+  font-size:30rpx;
+  display: flex;
+  align-items:flex-end;  
+}
+
+.gongchangweizhi .juli{
+  margin-left:10rpx;
+  width:120rpx;
+  height:50rpx;
+  color:#000;
+  font-size:30rpx;
+  display: flex;
+  align-items:flex-end;
+}
+.tuijian{
+  width:100%;
+  height:50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  border:1rpx #eee solid;
+}
+.huo{
+  margin-left:15rpx;
+  width:30rpx; 
+}
+.wenzi text{
+  padding-left:10rpx;
+  font-size:30rpx;
+  color:#cf3c35;
+
+}
+.tuijianmoney{
+  color:#477cfe;
+  padding-right:20rpx;
+}
+/*工厂简章*/
+.gongchangjianzhang{
+  width:96%;
+  background-color:#fff;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px gainsboro;
+}
+.jianzhang{
+  width: 100%;
+  height: 60rpx;
+  border:1rpx #eee solid;
+  color:#000;
+  font-size: 40rpx;
+  padding-left: 20rpx;
+}
+/*文本搜索*/
+.pay-hint-content{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #888;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  text-overflow: ellipsis;
+  overflow:hidden; 
+}
+.ellipsis{
+  -webkit-line-clamp:5; 
+  opacity: 0.75 ;
+}
+.unellipsis{
+  -webkit-line-clamp:0; 
+  opacity: 1 ;
+}
+.readmore{
+  color:#477cfe;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+}
+/*岗位照片*/
+.gangweitupian{
+  width:96%;
+  background-color:#fff;
+  border-radius: 5rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 5px 5px 5px gainsboro;
+}
+.gangweititle{
+   width: 100%;
+  height: 60rpx;
+  border:1rpx #eee solid;
+  color:#000;
+  font-size: 40rpx;
+  padding-left: 20rpx;
+}
+
+.tupian{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding-top: 10rpx;
+  padding-left: 1%;
+  padding-right: 1%;
+  border:1rpx #eee solid;
+
+}
+.scroll .scroll-view-item{
+  border: 1rpx #477CFE solid;
+  border-radius: 20rpx;
+  width:100%;
+  background-color:#fff;
+  margin-bottom: 5rpx;
+  color: #000;
+  display: flex;
+  flex-direction: culum;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.gongchangimages{
+  
+  width: 100%;
+
+}
+.culum1{
+  width:49.5%;
+}
+.culum2{
+  width:49.5%;
+}
+/*推荐得赏金*/
+.apply{
+  
+  width:100%;
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.apply  .shenqing{
+  width:45%;
+  height:80rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  background-color: #477CFE;
+  color:#FFF;
+  border-radius: 7rpx;
+  font-size:30rpx;
+}
+.apply  .tuijian{
+  width:45%;
+  height:80rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  color:#477CFE;
+  border-radius: 7rpx;
+  font-size:30rpx;
+}
+/*浮窗按钮*/
+.zhuanfa{
+    width:150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    top: 380rpx;
+    right: 30rpx;  
+    border: 0 solid #ffffff;
+    box-shadow: 2px 2px 2px #cccccc;
+
+    
+}
+.yijianzhuanfa{
+    width:180rpx;
+    top: 370rpx;
+    border-radius: 50%;
+    position: fixed;
+    right: 15rpx;
+   
+}
+.guanzhu{
+    width:150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    float: right;
+    background-color: #ffffff;
+    position: fixed;
+    top: 560rpx;
+    right: 30rpx;  
+    border: 0 solid #ffffff;
+    box-shadow: 2px 2px 2px #cccccc;
+}
+.dianzan{
+    width:180rpx;
+    top: 550rpx;
+    border-radius: 50%;
+    position: fixed;
+    right: 15rpx;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

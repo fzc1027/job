@@ -1,16 +1,49 @@
 
-<view class="search-box">
- <input placeholder="中文/拼音/首字母" class='search-input' bindinput='bindSarchInput' placeholder-class='search-input-placeholder' />
+
+<view class="search-container">
+            <view class="search-input" >
+                <i>
+                    <image src="../../images/ati.png" />
+                </i>
+                <input type="text" placeholder-class="place-holder" placeholder="中文/拼音/首字母" bindinput='bindSarchInput' />
+            </view>
 </view>
-<view class='a-z'>
- <view wx:for="{{cityAZ}}" wx:key="unique">
- <view data-id='{{item.cityName}}' bindtap='bindAZ'>{{item.cityName}}</view>
- </view>
-</view>
-<view class='city-item-content'>
- <view wx:for="{{cityResults}}" wx:key="unique">
- <view wx:if="{{item.cityPinYin.length > 1}}" class='city-item' data-cityname='{{item.cityName}}' bindtap='citySelected'>{{item.cityName}}</view>
- <view wx:else class='city-item-A-Z' data-cityname='{{item.cityName}}'>{{item.cityName}}</view>
- <!-- <view data-cityname='{{item.cityName}}' bindtap='citySelected' >{{item.cityName}}</view> -->
- </view>
+<view class="citysall" style="height:{{scrollheight}}px">
+  <view class="citys">  
+      <scroll-view scroll-y="true" style="height:{{scrollheight}}px" class='city-item-content'>
+          <view wx:for="{{cityResults}}" wx:key="unique">
+            <view wx:if="{{item.cityPinYin.length > 1}}" class='city-item' data-cityname='{{item.cityName}}' bindtap='citySelected'>{{item.cityName}}
+            </view>
+            <view wx:else class='city-item-A-Z' data-cityname='{{item.cityName}}'>{{item.cityName}}</view>
+          <!-- <view data-cityname='{{item.cityName}}' bindtap='citySelected' >{{item.cityName}}</view> -->
+          </view>
+      </scroll-view>     
+  </view>
+  <view class="maincitys" style="height:{{scrollheight}}px">
+    <view class="dingwei">
+          <text class="citytitle">当前定位</text>
+          <view class="citystab">  
+            <view  class="citytext">               
+                      <text class="nav-name" >{{nowcity}}</text>
+            </view>
+          </view>
+    </view>
+    <view class="history">
+          <text class="citytitle">历史记录</text>
+          <view class="citystab">  
+            <view wx:for="{{hotcitys}}" wx:for-item="item" wx:key="id" data-cityname="{{item.cityName}}"  class="citytext" bindtap='citySelected'>               
+                      <text class="nav-name"  >{{item.cityName}}</text>
+            </view>
+          </view>
+    </view>
+    <view class="hot">
+          <text class="citytitle">热门搜索</text>    
+          <view class="citystab">  
+            <view wx:for="{{hotcitys}}" wx:for-item="item" wx:key="id" data-cityname="{{item.cityName}}"  class="citytext" bindtap='citySelected'>               
+                      <text class="nav-name"  >{{item.cityName}}</text>
+            </view>
+          </view>
+    </view>
+
+  </view>
 </view>

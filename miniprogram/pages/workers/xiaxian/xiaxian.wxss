@@ -1,0 +1,166 @@
+/**index.wxss**/
+/*整体背景颜色*/
+page{
+  background-color:#f7f7ff;
+}
+/*all*/
+.all{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color:#f7f7ff;
+}
+/* 人力资源公司 */
+
+.renli{
+  box-sizing: border-box;
+  width:100%;
+  height: 100rpx;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #477CFE;
+  position: relative;
+  border:1rpx #000 solid; 
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+.gongsi{
+  width: 60%;
+  height: 100rpx;
+  border:1rpx #000 solid;
+  display:flex;
+  flex-direction: row;
+}
+.xingji{
+  width:30%;
+  height: 100rpx;
+  border:1rpx #000 solid;
+  display:flex;
+ 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gongsi .touxiang{
+  width:15%;
+  height: 100rpx;
+  border:1rpx #000 solid;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ren{
+  width:100%;
+  height:70rpx;
+  border:1rpx #000 solid;
+}
+.gongsi .gongsiname{
+  width:75%;
+  height: 100rpx;
+  border:1rpx #000 solid;
+  color:#fff;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gongsi .xiangqing{
+  width:10%;
+  height: 100rpx;
+  border:1rpx #000 solid;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wenhao{
+  width: 40rpx;
+  height: 40rpx;
+}
+.redu{
+  width:30%;
+  height: 40rpx;
+  border:1rpx #000 solid;
+  color:#fff;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.re{
+  width: 100%;
+  height: 100%;
+}
+.huobao{
+  width:70%;
+  height: 40rpx;
+  border:1rpx #000 solid;
+  color:#fff;
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+.huo{
+  width: 15%;
+  height: 70%;
+}
+/*工作经验*/
+.jingyan{
+  color:#000;
+  width:90%;
+  background: #f7f7ff;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.jingyanText{
+   width: 100%;
+  border: 2rpx #9a9a9a solid;
+  border-radius: 20rpx;
+  color:#000;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20rpx;
+}
+/*转发按钮*/
+.erweima{
+  width:90%;
+  height:80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(71, 254, 95);
+  color:#FFF;
+  border-radius: 7rpx;
+  font-size:30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 20rpx;
+}
+.add{
+  width:90%;
+  height:80rpx;
+  border: 1rpx #477CFE solid;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  background-color: #477CFE;
+  color:#FFF;
+  border-radius: 7rpx;
+  font-size:30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+}

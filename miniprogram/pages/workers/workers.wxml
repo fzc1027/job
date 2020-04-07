@@ -1,0 +1,167 @@
+<view class="all">
+  <!--人力资源公司-->
+  <view class="renli">
+    <view class="gongsi">
+      <view class="touxiang">
+        <image src="/images/renliziyuan/ren.png" mode="aspectFit" class="ren"></image>
+      </view>
+      <view class="gongsiname">范仲淹的人力资源公司</view>
+      <view class="xiangqing">
+          <image src="/images/renliziyuan/wenhao.png" mode="aspectFit" class="wenhao"></image>
+      </view>
+    </view>
+    <view class="xingji">
+      <view class="redu">
+        <image src="/images/renliziyuan/redu.png" mode="aspectFit" class="re"></image>
+      </view>
+      <view class="huobao">
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+      </view>
+    </view>
+  </view>
+  <!--搜索-->
+  <view class="search-container">
+              <view class="search-input"  bindtap="Tabsearch">
+                  <i>
+                      <image src="../../images/ati.png" />
+                  </i>
+                  <view type="text" class="place-holder" placeholder="搜索" >搜索</view>
+              </view>
+
+    </view>
+    
+    <!-- 导航 -->
+
+    <view class="navList1">      
+        
+              <view wx:for="{{items}}" wx:for-item="item" wx:key="id"wx:for-items="{{items}}" data-id="{{item.name}}" value="{{item.name}}"  class='{{item.checked?"nav-item":"nav-itemno"}}' bindtap='clicks'>
+                  
+                  <text class="nav-name"  >{{item.value}}</text>
+              </view>
+    </view>
+    <!--二级导航-->
+    <view class="navList2"  hidden="{{items[0].yincang}}">
+        <view class="gstab">  
+        <view wx:for="{{ygtab}}" wx:for-item="item" wx:key="id"  class='{{item.checked?"nav-item":"nav-itemno"}}' data-id="{{item.name}}" 
+        data-tab="{{item.value}}" bindtap='ygtab'>
+                  
+                  <text class="nav-name"  >{{item.value}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="navList2"  hidden="{{items[1].yincang}}">
+        <view class="gstab">  
+        <view wx:for="{{gstab}}" wx:for-item="item" wx:key="id"  class='{{item.checked?"nav-item":"nav-itemno"}}' data-id="{{item.name}}" 
+        data-tab="{{item.value}}" bindtap='gstab'>
+                  
+                  <text class="nav-name"  >{{item.value}}</text>
+        </view>
+      </view>
+    </view>
+    <!--职位下拉框页-->
+    
+    <view class="xinxinomral" hidden="{{items[0].yincang}}">
+      <view wx:for="{{worker}}" wx:for-item="item1" wx:for-index="id1" >
+        <view class="title" bindtap="xiala" data-index1="{{id1}}">
+            {{item1.value}}(共5个关注职位){{id1}}
+          
+              <image src="{{item1.xialatubiao}}" mode="aspectFit" class="xiala"></image>
+           
+        </view>
+  
+        <view  class="workerpage" hidden="{{item1.xinxiyincang}}">
+          <view wx:for="{{xunhuan}}" class="touch-item1 {{item.isTouchMove ? 'touch-move-active1' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+           
+              <view class="data">
+                  <view class="middle">
+                      <view class="touxiang">
+                      
+                      </view>
+                      <view class="name">
+                        <view class="name1">
+                          <view class="name2">     
+                          范闲 
+                          </view>
+                          <view class="sex">  
+                          男    
+                          </view>
+                          <view class="ruzhi">  
+                          已入职
+                          </view>
+                        </view>
+                        <view class="xinxiwanzheng">
+                          信息完整度：80%
+                        </view>
+                        <view class="xinxi">
+                          高级钳工 | 工作中 | 100元
+                        </view>
+                      </view>
+                  </view>
+            
+              </view>
+              <view class="del1" catchtap="edit" data-index="{{index}}">
+                <image src='{{item.lock?"/images/renliziyuan/jiesuo.png":"/images/renliziyuan/xiugai.png"}}' mode="aspectFit" class="del"></image>
+     
+              </view>
+              <view class="del1 del2" catchtap="del" data-index="{{index}}">
+                <image src="/images/renliziyuan/shanchu.png" mode="aspectFit" class="del" ></image>
+              </view>
+        
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--公司下拉框页-->
+    
+    <view class="xinxinomral" hidden="{{items[1].yincang}}">
+      <view wx:for="{{gs}}" wx:for-item="item2" wx:for-index="id2" >
+        <view class="title" bindtap="gsxiala" data-index2="{{id2}}">
+            {{item2.value}}(共5个关注职位){{id2}}
+          
+              <image src="{{item2.xialatubiao}}" mode="aspectFit" class="xiala"></image>
+           
+        </view>
+        
+        <view  class="workerpage" hidden="{{item2.xinxiyincang}}">
+          <view wx:for="{{xunhuan}}" >
+            
+            <view class="gsdata">
+              <view class="middle">
+                      <view class="touxiang">
+                      
+                      </view>
+                      <view class="name">
+                        <view class="name1">
+                          <view class="name2">     
+                          华强北电子厂
+                          </view>
+                        </view>
+                        <view class="xinxiwanzheng">
+                          未招满
+                        </view>
+                        <view class="xinxi">
+                          高级钳工 |
+                          <view class="zfxinxi">
+                          转发1元,入职成功100元
+                          </view>
+                        </view>
+                      </view>
+                      <view class="zhuanfa">转发</view>                 
+                </view>
+                
+                        
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--发展下线-->
+    <view class="shenqing"  bindtap="xiaxian">
+                <text>招聘下线</text>
+    </view>
+</view>

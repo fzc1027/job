@@ -1,0 +1,58 @@
+<view class="yue">
+    <view class="yue1" >
+      <view class="tu">
+        <view class="where">
+          <view class="where1">
+          提现到
+          </view>
+          <view class="where2">
+          微信 
+          </view>
+        </view>
+        <view class="time">
+         预计1~3天
+        </view>
+      </view>
+     
+      <view class="qian">
+        <view class="qian1">提现金额</view>
+        <view class="qian2">         
+            <view class="money">
+              <view class="money1">
+              ￥
+              </view>
+              
+              <input class="money2" type="digit" placeholder="元" />
+              
+            </view>
+        </view>
+        <view class="qian3">
+           <view class="jiangli1">
+          奖励金￥703.6元,
+          </view>
+          <view class="jiangli2">
+          全部提现
+          </view>  
+            
+        </view>
+        
+      </view>
+        <!--通用与反馈-->
+      <view class="wechat" bindtap="showDialog" >
+                  <text>提现到微信</text>
+      </view>
+    </view>
+</view>
+<!--弹窗-->
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view style='padding:100rpx;'>你的200元正在提现</view>
+    <view style='padding:100rpx;color:#477cfe;' catchtap="continue1">继续逛逛</view>
+  </view>
+</view>
+
+
+
+
+

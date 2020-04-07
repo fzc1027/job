@@ -1,0 +1,112 @@
+
+              <textarea class="wenbenText" placeholder="分享这一刻给懂你的人" bindblur="wenben" value="{{details}}">
+              </textarea>
+              <view class="yinpin">
+                  <view class="syinpin" wx:for="{{yinpinurl}}" wx:for-index="id" >
+                      <image src="/images/蓝领之家/圈子/yuyin@2x.png" mode="widthFix" class="weizhi"></image>
+                      <view class="playyinpin" bindtap="playyinpin"  id="{{id}}">
+                      <text class="play1">{{item.time}}秒</text>
+                      <text class="play2">(点击播放）</text>
+                      </view>
+                      <view class="yindelete" bindtap="yindelete" id="{{id}}" >
+                      <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png" mode="widthFix" class="weizhi"></image>
+                      </view>
+                  </view>
+              </view>
+              <view class="bqzs">
+                <view wx:for="{{bq}}" wx:for-index="id" class="sbq">
+                    <view  class="bq">
+                      <text class="bqwb"> #{{item}}</text> 
+                    </view>
+                    <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png"  id="{{id}}" catchtap='deletebq' mode='aspectFit' class="bqdelete"></image>
+                </view>
+              </view>
+              <view class="zmiddle">
+                <view  class="jineng-cont">
+                      <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                          <image src='{{item}}'  id="{{id}}" bindtap='changejnphoto' mode='aspectFit'class="photo"></image>
+                          <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png"  id="{{id}}" catchtap='deletephoto' mode='aspectFit' class="photodelete"></image>       
+                      </view>
+                      <view   class="addjineng-list">
+                          <image src="/images/蓝领之家/圈子/jia@2x.png"  bindtap='addjnphoto' mode='aspectFit'></image>      
+                      </view>
+                </view>  
+              </view>
+              <view class="db">
+                <view class="dizhi">
+                  <image src="/images/weizhi.png" mode="widthFix" class="weizhi"></image>
+                  <text class="city">城市</text>
+                  <view class="delete">
+                      <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png" mode="widthFix" class="weizhi"></image>
+                  </view>
+                </view> 
+                <view  class="addbq" bindtap="addbq">
+                   <text class="addbqwb"> #添加标签</text>
+                </view>
+              </view>
+              <view class="bottom">
+                  <view class="add">
+                      <view class="inputradio" bindtap='startluyin'>
+                          <image src="/images/蓝领之家/圈子/voice_icon@2x.png" mode="widthFix" class="inputradio1"></image>
+                          输入语音
+                      </view>
+                      <view class="addphoto" bindtap='addjnphoto'>
+                      <image src="/images/蓝领之家/圈子/tupian@2x.png" mode="widthFix" class="addphoto1"></image>
+                          添加照片
+                      </view>
+                  </view>
+                  <view class="fabu" bindtap="fabu">
+                          发布
+                  </view>
+              </view>
+              <!--录音模块-->
+              <view class='luyin-box' hidden="{{luyin}}">
+              <button class="yijianzhuanfa" >
+                  <image src="/images/蓝领之家/圈子/长按输入语音@2x.png" mode="widthFix"  class="lytu" bindlongtap='touchdown'  bindtouchend="touchup"></image>
+                  <!-- 录制时间 -->      
+                  <view class='time_view'>{{jstime}}秒</view>
+
+              </button>
+              </view>
+<!--标签-->
+<view class='toast-box' hidden='{{ifbq}}'>
+        <view class='toastbg'></view>
+
+        <view class='showToast'>
+
+            <view class='toast-title'>
+
+                <text>添加标签</text>
+
+            </view>
+
+            <view class='toast-main'>
+
+                <view class='toast-input'>
+
+                    <input placeholder='贴上你喜欢的标签' bindinput='bqtext' value='{{bqtext}}'></input>
+
+                </view>
+
+            </view>
+
+            <view class='toast-button'>
+
+                <view class='button1'>
+
+                    <button catchtap='cancel'>取消</button>
+
+                </view>
+
+                <view class='button2'>
+
+                    <button catchtap='confirm'>确定</button>
+
+                </view>
+
+            </view>
+
+        </view>
+
+    </view>
+

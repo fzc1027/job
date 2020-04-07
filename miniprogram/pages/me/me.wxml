@@ -1,0 +1,99 @@
+<view class="me">
+<!--头像-->
+    <view class="wo">
+      <view class="xiaxian" bindtap="xiaxian">
+        <view class="zhongdian">
+          <view class="z1">下线人数</view> 
+          <view class="z2">12</view>  
+        </view>    
+      </view>
+      <view class="touxiang">
+         <image src="/images/renliziyuan/ren.png" mode="aspectFit" class="ren"></image>
+      </view>
+      <view class="guanzhugongsi" bindtap="guanzhugs">
+        <view class="zhongdian">
+          <view class="z1">关注公司</view>
+          <view class="z2">12</view>
+        </view>
+      </view>
+    </view>
+<!--姓名-->
+    <view class="name">范仲淹</view>
+<!-- 导航 -->
+  <view class="navList2">             
+            <view class="nav-item" bindtap="clickxiugai">
+                <image class="nav-icon" src="/images/蓝领之家/我的信息/gerenxinxishezhi@2x.png"/>
+                <text class="nav-name">信息修改</text>
+            </view>         
+            
+            <view class="nav-item"  catchtap='dropdownTap'>
+                <image class="nav-icon" src="/images/蓝领之家/我的信息/qiehuan@2x.png" />
+                <text class="nav-name">切换账号</text>
+            </view>
+            <view class="nav-item"  catchtap='clickyue'>
+                <image class="nav-icon" src="/images/蓝领之家/我的信息/dilanxianxingiconyihuifu_huabanfuben@2x.png" />
+                <text class="nav-name">余额</text>
+            </view>
+  </view>
+
+<!--个人综合信息-->
+<view class="zonghexinxi">
+  <view class="zhtitle">个人综合信息</view>
+  <view class="zhtab">
+    <view >投递次数</view>
+    <view >推荐人数</view>
+    <view >转发次数</view>
+    <view >入职次数</view>
+  </view>
+  <view class="zhxinxi">
+    <view >7</view>
+    <view >76</view>
+    <view >156</view>
+    <view >1</view>
+  </view>
+</view>
+<!--关注公司-->
+
+<view class="zonghexinxi">
+  <view class="zhtitle">应聘的公司信息</view>
+  <view class="guanzhugs" >
+
+        <view class="navList4">
+            <view class="xiaotab">公司</view>
+            <view class="xiaotab">招聘职位</view>
+            <view class="xiaotab">应聘进度</view>
+            <view class="xiaotab">悬赏金额</view>
+    
+        </view>
+        
+          <view wx:for="{{xunhuan}}">
+            
+            <view class="gsdata">
+                <view class="gsname">   
+                  <view class="gstupian">   
+                    <image src="/images/蓝领之家/我的信息/图层6@2x.png" mode="aspectFit"  class="gstubiao"></image>
+                  </view>
+                  <view class="gsdname">   
+                  华强北电子厂地理上看能否
+                  </view>
+                </view>
+                <view class="zhaopinzhiwei">普工</view>
+                <view class="zhaopinzhiwei">80%</view>  
+                <view class="jiangjin">
+                  <text>转发1元</text>
+                  <text>入职成功100元</text>
+                </view>
+                       
+            </view>
+
+          </view>
+        </view>
+      
+</view>
+
+      <!--通用与反馈-->
+    <view class="shenqing" >
+                <text>通用与反馈</text>
+    </view>
+</view>
+

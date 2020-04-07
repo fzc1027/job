@@ -1,0 +1,102 @@
+<view class="page">
+  <view class="gerenxinxi">
+    
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          公司名称
+          </view>     
+            <input class="name2"   bindinput="gsmc" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          职位名称
+          </view>     
+            <input class="name2"   bindinput="zwmc" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          行业类别
+          </view>     
+            <input class="name2"   bindinput="hylb" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          技能标签
+          </view>     
+            <input class="name2"   bindinput="jnbq" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          在职时间
+          </view>     
+            <input class="name2"   bindinput="zzsj" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          行业类别
+          </view>     
+            <input class="name2"   bindinput="hylb" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          工作描述
+          </view>     
+            <input class="name2"   bindinput="gzms" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          当前月薪
+          </view>     
+            <input class="name2"   bindinput="dqyx" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    
+    <view class="apply">
+      <view class="tuijian">
+          <text>增加一页</text>
+      </view>
+      <view class="shenqing" bindtap="save">
+          <text>确认保存</text>
+      </view>
+    </view>
+  </view>
+</view>

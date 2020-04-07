@@ -1,0 +1,59 @@
+<view class="apply">
+    <view class="ID-mian">
+      <view class="card-name">请上传身份证认证</view>
+      <view class="card-cont">
+          <view class="card-list">
+              <image src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+              <view>身份证正面照</view>
+          </view>
+          <view class="card-list">
+              <image src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+              <view>身份证反面照</view>
+          </view>
+        </view>
+    </view>
+    <view class="name">
+        <view>姓名</view>
+        <input class='placeholder' placeholder='请输入真实姓名' bindinput="name" />
+    </view>
+    <view class="name">
+        <view>性别</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{sexarray}}">
+          <view class="sex">
+            {{sex}}
+          </view>
+        </picker>
+    </view>
+    <view class="name">
+        <view>出生日期</view>
+        <picker mode="date" value="{{date}}" start="1960-09-01" end="2000-09-01" bindchange="bindDateChange">
+          <view class="date">
+             {{date}}
+          </view>
+        </picker>
+    </view>
+    <view class="name">
+        <view>身份证号</view>
+        <input class='placeholder' placeholder='请输入身份证号'  bindinput="cardnumber"/>
+    </view>
+    <view class="name">
+        <view>手机号</view>
+        <input class='placeholder' placeholder='请输入手机号' bindinput="phonenumber" />
+    </view>
+    <view class="name">
+        <view>目前所在城市</view>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" >
+          <view class="city">
+          {{city}}
+          </view>
+        </picker>
+    </view>
+    <view class="jingyan">
+        <view>工作经验</view>
+          <textarea class="jingyanText" placeholder="输入您的工作经验" bindblur="jingyan" value="{{details}}">
+          </textarea>
+    </view>
+    <view class="shenqing"  bindtap="submit">
+                <text>申请（同意申请注册成会员）</text>
+    </view>
+</view>

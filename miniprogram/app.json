@@ -1,24 +1,36 @@
 {
   "pages": [
-    
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room",
-    "pages/search/search",
+    "pages/me/xiugai/grxiugai",
+    "pages/workers/xiugai/xiugai",
+    "pages/workers/xiugai/zjxiugai/zjxiugai",
+    "pages/workers/xiugai/jbxiugai/jbxiugai",
+    "pages/workers/xiugai/qzxiugai/qzxiugai",
+    "pages/workers/xiugai/jyxiugai/jyxiugai",
+    "pages/workers/xiugai/jlxiugai/jlxiugai",
+    "pages/workers/workers",
+    "pages/me/me",
+    "pages/quanzi/quanzi",
+    "pages/quanzi/singleqz/singleqz",
+    "pages/quanzi/startqz/startqz",
+    "pages/login/login", 
+    "pages/guanzhu/guanzhu",
+    "pages/workers/code/code",
+    "pages/me/xiugai/jlxiugai/jlxiugai",
+    "pages/me/xiugai/jyxiugai/jyxiugai",
+    "pages/me/xiugai/qzxiugai/qzxiugai",  
+    "pages/me/xiugai/xiugai",
     "pages/gongchang/gongchang",
+    "pages/search/search",
+    "pages/workers/xiaxian/xiaxian",
     "pages/citys/citys",
-    "pages/apply/apply"
+    "pages/apply/apply",
+    "pages/apply/applysuccess",
+    "pages/apply/tjapply/tjapply",
     
+    "pages/me/yue/yue",
+    "pages/me/yue/tixian/tixian"
+   
   ],
   "window": {
     "backgroundColor": "#ffffff",
@@ -35,7 +47,7 @@
       {
         "selectedIconPath": "images/chatselect.png",
         "iconPath": "images/chat.png",
-        "pagePath": "pages/storageConsole/storageConsole",
+        "pagePath": "pages/quanzi/quanzi",
         "text": "圈子"
       },
       {
@@ -47,13 +59,13 @@
       {
         "selectedIconPath": "images/workerselect.png",
         "iconPath": "images/worker.png",
-        "pagePath": "pages/im/im",
+        "pagePath": "pages/workers/workers",
         "text": "员工"
       },
       {
         "selectedIconPath": "images/meselect.png",
         "iconPath": "images/me.png",
-        "pagePath": "pages/userConsole/userConsole",
+        "pagePath": "pages/me/me",
         "text": "我"
       }
     ]

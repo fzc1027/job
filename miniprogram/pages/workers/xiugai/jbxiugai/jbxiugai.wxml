@@ -1,0 +1,123 @@
+<view class="page"> 
+  <view class="gerenxinxi">
+    <view class="touxiang">
+      <view class="touxiang1">
+        <view class="touxiang2">
+        <image src='{{txphoto}}' class="tx" mode='aspectFit'></image>
+        </view>
+        <view class="touxiang3" bindtap="txphoto">
+            <view >
+            头像修改
+            </view>
+            <view class="youtubiao">
+            <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          姓名
+          </view>     
+            <input class="name2"   bindinput="name" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          性别
+          </view>
+          <view class="name2">
+            <view class="sex">
+              <view class="man" class='{{man?"man":"noman"}}' bindtap='clicks1'>
+              男 
+              </view>
+              <view class="woman" class='{{woman?"woman":"nowoman"}}' bindtap='clicks2'>
+              女 
+              </view>
+            </view>
+          </view>
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+
+    <picker mode="date" value="{{date}}" style="width:100%" start="1960-09-01" end="2020-01-01" bindchange="bindDateChange">
+      <view class="name">
+        <view class="nameleft">
+            <view class="name1">
+            出生日期
+            </view>
+            <view class="name2">
+            {{date}}
+            </view>
+        </view>
+        <view class="youtubiao">
+          <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+        </view>
+      </view>
+    </picker>
+
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          手机号
+          </view>
+          <input class="name2"   bindinput="pnumber" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view>
+    </view>
+    <!--城市-->
+    <picker mode="region" bindchange="bindRegionChange1"  style="width:100%" value="{{region}}" custom-item="{{customItem}}" >
+      <view class="name">
+        <view class="nameleft">
+            <view class="name1">
+            现居住城市
+            </view>
+            <view class="name2">
+            {{city1}}
+            </view>
+        </view>
+        <view class="youtubiao">
+          <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+        </view>
+      </view>
+    </picker>
+    <picker mode="region" style="width:100%" bindchange="bindRegionChange2" value="{{region}}" custom-item="{{customItem}}" >
+      <view class="name">
+          <view class="nameleft">
+              <view class="name1">
+              户口所在地
+              </view>
+              <view class="name2">
+              {{city2}}
+              </view>
+          </view>
+          <view class="youtubiao">
+            <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+          </view>
+      </view>
+    </picker>   
+    <view class="name">
+      <view class="nameleft">
+          <view class="name1">
+          身体状况
+          </view>
+          <input class="name2"   bindinput="body" />
+      </view>
+      <view class="youtubiao">
+        <image src="/images/renliziyuan/you.png" mode="aspectFit" class="you"></image>
+      </view> 
+    </view>
+    <view class="shenqing"  bindtap="save">
+                    <text>确认保存</text>
+    </view>
+  </view>
+</view>

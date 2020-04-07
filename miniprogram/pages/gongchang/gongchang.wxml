@@ -118,13 +118,13 @@
               <view class="shenqing" bindtap="apply">
                 <text>申请职位</text>
               </view>
-              <view class="tuijian">
+              <view class="tuijian" bindtap="tjapply">
                 推荐赚赏金
               </view>
   </view>
-  <view class="zhuanfa">
+  <button  open-type="share"  >
    <image src="/images/yijianzhuanfa.png" mode="widthFix" class="yijianzhuanfa"></image>
-  </view>
+  </button>
   <view class="guanzhu" bindtap="dianzan">
     <image src="{{diansrc}}" mode="widthFix" class="dianzan"></image>
   </view>

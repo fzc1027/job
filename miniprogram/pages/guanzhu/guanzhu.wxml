@@ -1,0 +1,75 @@
+<!--搜索-->
+  <view class="search-container">
+              <view class="search-input"  bindtap="Tabsearch">
+                  <i>
+                      <image src="../../images/ati.png" />
+                  </i>
+                  <view type="text" class="place-holder" placeholder="搜索" >搜索</view>
+              </view>
+
+    </view>
+<view class="top-tab " >
+  <view class="top-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" bindtap="switchTab">
+    <view class="tab1">{{item.digit}}</view>    
+    <view class="tab2">{{item.name}}</view>
+  </view>
+</view>
+
+
+  <view class="workerpage" hidden="{{currentNavtab==0 ? '' : true}}">    
+      <view wx:for="{{xunhuan}}" >  
+          <view class="gsdata">
+              <view class="middle">
+                  <view class="touxiang">                      
+                  </view>
+                  <view class="name">   
+                      <view class="name1">                        
+                          华强北电子厂   
+                      </view>
+                      <view class="xinxi">
+                          一分钟前发布了钳工招聘
+                      </view>
+                  </view>
+                  <view class="zhuanfa">查看</view>                 
+              </view>            
+          </view>
+      </view>      
+  </view>
+  <view class="workerpage" hidden="{{currentNavtab==1 ? '' : true}}">
+       <view wx:for="{{xunhuan}}" >  
+          <view class="gsdata">
+              <view class="middle">
+                  <view class="touxiang">                      
+                  </view>
+                  <view class="name">   
+                      <view class="name1">                        
+                          曹红   
+                      </view>
+                      <view class="xinxi">
+                          一分钟前发布了动态
+                      </view>
+                  </view>
+                  <view class="zhuanfa">私信</view>                 
+              </view>            
+          </view>
+      </view>      
+  </view>
+  <view class="workerpage" hidden="{{currentNavtab==2 ? '' : true}}">
+       <view wx:for="{{xunhuan}}" >  
+          <view class="gsdata">
+              <view class="middle">
+                  <view class="touxiang">                      
+                  </view>
+                  <view class="name">   
+                      <view class="name1">                        
+                          曹红   
+                      </view>
+                      <view class="xinxi">
+                          一分钟前发布了动态
+                      </view>
+                  </view>
+                  <view class="zhuanfa">私信</view>                 
+              </view>            
+          </view>
+      </view>      
+  </view>

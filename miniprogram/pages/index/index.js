@@ -494,6 +494,12 @@ Page({
       url: '../apply/apply',
     })
   },
+  //推荐申请职位函数
+  tjapply: function () {
+    wx.navigateTo({
+      url: '../apply/tjapply/tjapply',
+    })
+  },
   // scoll重置高度函数
 
 scorallreset:function(){

@@ -378,9 +378,7 @@
     top: 380rpx;
     right: 30rpx;  
     border: 0 solid #ffffff;
-    box-shadow: 2px 2px 2px #cccccc;
-
-    
+    box-shadow: 2px 2px 2px #cccccc;  
 }
 .yijianzhuanfa{
     width:180rpx;

@@ -1,58 +1,16 @@
-
-/* 个人信息 */
-.container {
-   position: fixed;
-    display: flex;
-    box-sizing: border-box;
-    padding: 20rpx 30rpx;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    transition:all .5s;
-    background-color: #efefef;
+.container{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.header {
-	background: #feb70f;
-	padding: 30rpx;
+.userinfo{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.header .avatar {
-	display: block;
-	margin: 0 auto;
-	width: 160rpx;
-	height: 160rpx;
-	border-radius: 50%;
-	border: 2px solid #fee767;
-}
-.header .nickname {
-	color: #000;
-	font-size: 22px;
-	line-height: 2.4;
-	text-align: center;
-}
-
-.section {
-	padding: 0;
-	color: #2e2e2e;
-	font-size: 30rpx;
-}
-.section .line {
-	margin-left: 30rpx;
-	padding-right: 30rpx;
-	line-height: 3;
-	border-bottom: 1px solid #efefef;
-}
-.section .line:last-child {
-	border-bottom: none;
-}
-.section .line:before {
-	content: '>';
-	float: right;
-	color: #aaa;
-	margin-left: 20rpx;
-}
-.section .line .tl {
-	float: right;
-	color: #aaa;
-}
-/* 正文 */

@@ -1,0 +1,82 @@
+<view class="page">
+<!--证件上传-->
+  <view class="zhengjianshangchuan" >
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          身份证：
+          </view>
+        </view>
+        <view class="right">
+        
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view class="card-cont">
+              <view class="card-list">
+                  <image src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+            
+              </view>
+              <view class="card-list">
+                  <image src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+              
+              </view>
+            </view>  
+      </view> 
+    
+    
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          健康证：
+          </view>
+        </view>
+        <view class="right">
+
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view class="card-cont">
+              <view class="card-list">
+                  <image src='{{jkphoto}}' id="1" bindtap='jkphoto' mode='aspectFit'></image>
+            
+              </view>
+            </view>  
+      </view> 
+    
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          技能证：
+          </view>
+        </view>
+        <view class="right">
+    
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view  class="jineng-cont">
+              <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                  <image src='{{item}}'  id="{{id}}" bindtap='changejnphoto' mode='aspectFit'></image>      
+              </view>
+              <view   class="addjineng-list">
+                  <image src='{{photos}}'  bindtap='addjnphoto' mode='aspectFit'></image>      
+              </view>
+        </view>  
+      </view> 
+      <view class="shenqing"  bindtap="save">
+                    <text>确认保存</text>
+      </view>
+    </view>
+    
+  </view>
+
+  
+</view>

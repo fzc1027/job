@@ -187,8 +187,8 @@ Page({
   },
   /*提交函数*/
   submit:function(){
-    wx.switchTab({
-      url: '../im/im',
+    wx.navigateTo({
+      url: '../apply/applysuccess',
     })
   },
   onLoad: function (options) {

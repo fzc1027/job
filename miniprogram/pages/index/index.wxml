@@ -200,7 +200,7 @@
               <view class="shenqing" catchtap="apply">
                 <text>申请职位</text>
               </view>
-              <view class="tuijian">
+              <view class="tuijian" catchtap="tjapply">
                 推荐赚赏金
               </view>
             </view>
@@ -256,7 +256,7 @@
               <view class="shenqing" catchtap="apply">
                 <text>申请职位</text>
               </view>
-              <view class="tuijian">
+              <view class="tuijian" catchtap="tjapply">
                 推荐赚赏金
               </view>
             </view>

@@ -1,0 +1,184 @@
+/*搜索框*/
+.search-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20rpx 20rpx;
+    width: 100%;
+    height:100rpx;
+    background-color: #fff;
+}
+
+
+
+
+.search-container .search-input {
+   width: 90%;
+   height: 60rpx;
+    background-color:#e0e0e042;
+    border-radius: 5rpx;
+    font-size: 24rpx;
+    padding: 2rpx 30rpx;
+    padding-left: 60rpx;
+    color: #000;
+    position: relative;
+    margin: 0 20rpx;
+    display: flex;
+    align-items: center;
+}
+
+.search-container .search-input i{
+    width: 30rpx;
+    height: 30rpx;
+    position: absolute;
+    left: 20rpx;
+    
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-container .search-input i image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.place-holder {
+    margin-top:8rpx;
+    color: #a9a9a9;
+    font-size: 30rpx;
+}
+/*关注标签*/
+
+.top-tab{
+  box-sizing: border-box;
+  width:100%;
+  height: 100rpx;
+  background: #fff;
+  color: #a9a9a9;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  padding-left: 50rpx;  
+  padding-right:  60rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-item{
+  width:30%;
+  height: 100%;
+  background: #fff;
+  color: #a9a9a9;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction:column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  
+}
+.top-item.active{
+  color: #000;
+  border-bottom: solid 2px #477cfe;
+}
+.tab1{ 
+  height: 50%;
+  background: #fff;
+
+  font-size: 32rpx;
+  font-weight:1000;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+}
+.tab2{
+
+  height: 50%;
+  background: #fff;
+
+  font-size: 28rpx;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+ 
+}
+/*数据*/
+.workerpage{
+  width: 100%;
+   background-color:#f7f7ff;
+   margin-top:10rpx;
+}
+/*招聘公司数据*/
+
+.gsdata{
+  width: 100%;
+  height: 150rpx;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  color:#000;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-bottom: 10rpx;
+  
+}
+.middle{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+}
+.touxiang{
+  width: 120rpx;
+  height: 120rpx;
+  border: 1rpx #000 solid;
+}
+.name{
+ 
+  height: 120rpx;
+  margin-left: -70rpx;
+}
+.name1{
+ 
+  color: #477cfe;
+  font-size: 32rpx;
+}
+.zhuanfa{
+  width: 150rpx;
+  height: 60rpx;
+  border: 1rpx #477CFE solid;
+  background-color:#fff;
+  color:#477cfe; 
+  border-radius: 50rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.xinxi{
+  height: 50%;
+  color: #a9a9a9;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 28rpx;
+}
+.zfxinxi{
+  color:#477cfe;
+  height: 100%;
+  border: 1rpx #000 solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: flex-start;
+  font-size: 28rpx;
+}

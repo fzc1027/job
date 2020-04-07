@@ -1,0 +1,18 @@
+
+<view class="apply">
+    <view class="success">
+      <view class="apply1">   
+      范闲的人力资源公司-招下线二维码
+    
+      </view>    
+    </view>
+    <view  bindlongpress='saveInviteCard'>
+    <canvas style="width: 200px; height: 200px;" canvas-id="myQrcode" ></canvas>
+    </view>
+    <view class="success">
+      <view class="apply1">   
+      长按保存图片到相册，转发给好友
+    
+      </view>    
+    </view>
+</view>

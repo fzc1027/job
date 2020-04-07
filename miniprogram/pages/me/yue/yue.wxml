@@ -1,0 +1,27 @@
+<view class="yue">
+    <view class="yue1" style="background:url('/images/蓝领之家/钱包/qian(2)@2x.png');background-size: 103% 105%">
+      <view class="tu">
+    
+      </view>
+      <view class="zi">
+      余额
+      </view>
+      <view class="qian">
+      ￥703.6元
+      </view>
+    </view>
+    
+    <view class="zhuanqian" >
+      <view class="zhuanqian1" catchtap="continue1">
+      接着赚奖励金
+      </view>
+    </view>
+      <!--提现到微信-->
+    <view class="wechat" bindtap="tixian">
+                <text>提现到微信</text>
+    </view>
+          <!--提现到银行卡-->
+    <view class="card" >
+                <text>提现到银行卡</text>
+    </view>
+</view>

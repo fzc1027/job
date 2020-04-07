@@ -1,0 +1,247 @@
+<view class="page">
+  <view class="gerenxinxi" hidden="{{showgeren}}">
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/jibenxinxi@2x.png"/>
+          </view>
+          <view class="type">
+          个人信息：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai" bindtap="gerenxiugai">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/xiugai@2x.png"/>
+          </view>
+        </view>
+      </view>
+      <view class="middle">
+          <view class="touxiang">
+          
+          </view>
+          <view class="name">
+            <view class="name1">
+              <view class="name2">     
+              范闲 
+              </view>
+              <view class="sex">  
+              男    
+              </view>
+            </view>
+            <view class="pnumber">
+            15937605393
+            </view>
+          </view>
+      </view>
+      <view class="xinxi">
+          33岁|健康良好|南京
+      </view>
+        
+    </view>
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/sixiangyinling@2x.png"/>
+          </view>
+          <view class="type">
+          求职意向：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai" bindtap="qiuzhixiugai">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/xiugai@2x.png"/>
+          </view>
+        </view>
+      </view>
+      
+      <view class="xinxi">
+          期待职位：   期待月薪：
+      </view>
+        
+    </view>
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/gongzuotai@2x.png"/>
+          </view>
+          <view class="type">
+          工作简历：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai" bindtap="gongzuoxiugai">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/xiugai@2x.png"/>
+          </view>
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view>职位：高级钳工
+        </view>
+        <view>公司：广东网易公司
+        </view>
+        <view>月薪：1.5~1.6万
+        </view>
+        <view>工作内容：服务器维护
+        </view>
+      </view>
+    </view>
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/jiaoyu@2x.png"/>
+          </view>
+          <view class="type">
+          教育经历：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+        
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai" bindtap="jiaoyuxiugai">
+              <image  class="tu1" mode="aspectFit" src="/images/蓝领之家/个人信息/xiugai@2x.png"/>
+          </view>
+        </view>
+      </view>
+      
+      <view class="xinxi">
+          最高学历：高中
+      </view>
+        
+    </view>
+  </view>
+    <!--证件上传-->
+  <view class="zhengjianshangchuan" hidden="{{showzhengjian}}">
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          身份证：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai">
+          
+          </view>
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view class="card-cont">
+              <view class="card-list">
+                  <image src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+            
+              </view>
+              <view class="card-list">
+                  <image src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+              
+              </view>
+            </view>  
+      </view> 
+    </view>
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          健康证：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai">
+          
+          </view>
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view class="card-cont">
+              <view class="card-list">
+                  <image src='{{jkphoto}}' id="1" bindtap='jkphoto' mode='aspectFit'></image>
+            
+              </view>
+            </view>  
+      </view> 
+    </view>
+    <view class="grxinxi">
+      <view class="title">
+        <view class="left">
+          <view class="tu">
+          </view>
+          <view class="type">
+          技能证：
+          </view>
+        </view>
+        <view class="right">
+          <view class="anniu" bindtap="kejian">
+              <image  class="tu1" mode="aspectFit" src='{{lock?"/images/蓝领之家/个人信息/椭圆@2x.png":"/images/蓝领之家/个人信息/椭圆1@2x.png"}}'/>
+          </view>
+          <view class="cansee">
+          {{lock?"可见":"不可见"}}
+          </view>
+          <view class="xiugai">
+          
+          </view>
+        </view>
+      </view>
+      <view class="zmiddle">
+        <view  class="jineng-cont">
+              <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                  <image src='{{item}}'  id="{{id}}" bindtap='changejnphoto' mode='aspectFit'></image>      
+              </view>
+              <view   class="addjineng-list">
+                  <image src='{{photos}}'  bindtap='addjnphoto' mode='aspectFit'></image>      
+              </view>
+        </view>  
+      </view> 
+    </view>
+  </view>
+  <!--个人信息与上传--> 
+    <view class="xinup" >
+        <view  class='{{showgeren?"up":"xin"}}' bindtap='clicks1'>
+            <text>个人信息</text>
+        </view>
+        <view  class='{{showzhengjian?"up":"xin"}}' bindtap='clicks2'>
+            <text>证件上传</text>
+        </view>
+    </view>
+</view>

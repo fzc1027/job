@@ -1,0 +1,197 @@
+<view class="gsdata">
+            <view class="top">
+              <view class="middle">
+                  <view class="touxiang">                      
+                  </view>
+                  <view class="name">   
+                      <view class="name1">                        
+                          曹红   
+                      </view>
+                      <view class="xinxi">
+                          一分钟前发布
+                      </view>
+                  </view>                                 
+              </view>
+              <view class="topright">
+                <view class="delete">
+                <image src="/images/蓝领之家/圈子/lajida@2x.png" mode="widthFix" class="delete1"></image>
+                </view>
+                <view class="fenlei">
+                  <view class="henxian">
+                  </view>
+                  心情
+                </view>
+              </view>
+            </view>  
+            <view class="zmiddle">
+                <view  class="jineng-cont">
+                      <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                          <image src='{{item}}'  id="{{id}}"  mode='aspectFit'class="photo"></image>    
+                      </view>
+                </view> 
+            </view>     
+              <text class="dtwb">1. 支付成功后，将会推送排队号；就诊当日可直接前往诊室等待叫号就诊，无需再现场缴费、排队。\n2. 已完成支付挂号费用的用户，如在就诊前一日取消预约订单，成功申请取消订单后，正常情况下系统将会在7个工作日内自动退费至用户支付账号内。\n3. 订单在正常状态下（非系统故障、非医生临时停诊）被爽约，由于占用了医院号源，此类订单不予以退费。
+              </text> 
+              <view class="yinpin">
+                  <view class="syinpin" wx:for="{{yinpinurl}}" wx:for-index="id" >
+                      <image src="/images/蓝领之家/圈子/yuyin@2x.png" mode="widthFix" class="weizhi"></image>
+                      <view class="playyinpin" bindtap="playyinpin"  id="{{id}}">
+                      <text class="play1">{{item.time}}秒</text>
+                      <text class="play2">(点击播放）</text>
+                      </view>
+                  </view>
+              </view>
+              <view class="db">
+                <view class="dizhi">
+                  <image src="/images/weizhi.png" mode="widthFix" class="weizhi"></image>
+                  <text class="city">城市</text>
+                </view> 
+                <view wx:for="{{xunhuan}}" class="bq">
+                   <text class="bqwb"> #日常穿搭</text>
+                </view>
+              </view>
+              
+             
+              <!--转发点赞与评论-->
+              <view class="bottom">
+                    
+                    <view class="pzan">
+                      <view class="fenxiang">
+                        <view class="ftu">
+                            <image src="/images/蓝领之家/圈子/zhuanfa@2x.png" mode="widthFix" class="dz"></image>
+                        </view>
+                        <view class="fshu">
+                        8
+                        </view>
+                    </view>
+                        <view class="zan">
+                                <view class="ztu">
+                                  <image src="/images/蓝领之家/圈子/dianzan@2x.png" mode="widthFix" class="dz"></image>
+                                </view>
+                                <view class="zshu">
+                                8
+                                </view>
+                        </view>
+                        <view class="ping" catchtap="pl">
+                                <view class="ptu">
+                                  <image src="/images/蓝领之家/圈子/pinglun@2x.png" mode="widthFix" class="dz"></image>
+                                </view>
+                                <view class="pshu">
+                                8
+                                </view>
+                        </view>
+                  
+                    </view>
+              </view>
+          </view>
+          <view wx:for="{{xunhuan}}">
+           <view class="pinglun">
+              <view class="ptop">
+                <view class="pmiddle">
+                  <view class="ptx">
+                    <view class="ptouxiang">                      
+                    </view>
+                    <view class="loucen">
+                    1L
+                    </view>
+                  </view>
+                  <view class="pname">   
+                      <view class="pname1">                        
+                          曹红   
+                      </view>
+                      <view class="pxinxi">
+                          一分钟前
+                      </view>
+                  </view>                                 
+                </view>
+                <view class="ptopright">
+                  <view class="pdelete">
+                      <image src="/images/蓝领之家/圈子/lajida@2x.png" mode="widthFix" class="pdelete1"></image>
+                  </view>
+                  <view class="plzan">
+                                <view class="plztu">
+                                    <image src="/images/蓝领之家/圈子/dianzan@2x.png" mode="widthFix" class="pdelete1"></image>
+                                </view>
+                                <view class="plzshu">
+                                8
+                                </view>
+                  </view>
+              </view>
+            </view>    
+                  <view class="pzmiddle">
+                    <view  class="jineng-cont">
+                          <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                              <image src='{{item}}'  id="{{id}}"  mode='aspectFit'class="photo"></image>    
+                          </view>
+                    </view> 
+                  </view> 
+                  <text class="pwb">1. 支付成功后，将会推送排队号；就诊当日可直接前往诊室等待叫号就诊，无需再现场缴费、排队。\n2. 已完成支付挂号费用的用户，如在就诊前一日取消预约订单，成功申请取消订单后，正常情况下系统将会在7个工作日内自动退费至用户支付账号内。\n3. 订单在正常状态下（非系统故障、非医生临时停诊）被爽约，由于占用了医院号源，此类订单不予以退费。
+                  </text>  
+                  <view class="pyinpin">
+                  <view class="syinpin" wx:for="{{yinpinurl}}" wx:for-index="id" >
+                      <image src="/images/蓝领之家/圈子/yuyin@2x.png" mode="widthFix" class="weizhi"></image>
+                      <view class="playyinpin" bindtap="playyinpin"  id="{{id}}">
+                      <text class="play1">{{item.time}}秒</text>
+                      <text class="play2">(点击播放）</text>
+                      </view>
+                  </view>
+                  </view>
+                  <view class="xiahx">
+                  </view>
+              </view>
+            </view>
+
+<!--发布评论-->
+<view class='toast-box' hidden='{{iffbpl}}'>
+        <view class='toastbg'>
+            <view class="fbpl">
+                <textarea class="plwenbenText" placeholder="评论" bindblur="wenben" value="{{details}}">
+                </textarea>
+                <view class="plzmiddle">
+                <view  class="jineng-cont">
+                      <view  wx:for="{{zhengjian}}" wx:for-index="id" class="jineng-list">
+                          <image src='{{item}}'  id="{{id}}" bindtap='changejnphoto' mode='aspectFit'class="photo"></image>
+                          <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png"  id="{{id}}" catchtap='deletephoto' mode='aspectFit' class="photodelete"></image>       
+                      </view>
+                  </view>  
+                </view>
+                <view class="plyinpin">
+                  <view class="syinpin" wx:for="{{yinpinurl}}" wx:for-index="id" >
+                      <image src="/images/蓝领之家/圈子/yuyin@2x.png" mode="widthFix" class="weizhi"></image>
+                      <view class="playyinpin" bindtap="playyinpin"  id="{{id}}">
+                      <text class="play1">{{item.time}}秒</text>
+                      <text class="play2">(点击播放）</text>
+                      </view>
+                      <view class="yindelete" bindtap="yindelete" id="{{id}}" >
+                      <image src="/images/蓝领之家/圈子/yuanxingdacha@2x.png" mode="widthFix" class="weizhi"></image>
+                      </view>
+                  </view>
+                </view>
+                <view class="bottom">
+                  <view class="add">
+                      <view class="inputradio" bindtap='startluyin'>
+                          <image src="/images/蓝领之家/圈子/voice_icon@2x.png" mode="widthFix" class="inputradio1"></image>
+                          输入语音
+                      </view>
+                      <view class="addphoto" bindtap='addjnphoto'>
+                      <image src="/images/蓝领之家/圈子/tupian@2x.png" mode="widthFix" class="addphoto1"></image>
+                          添加照片
+                      </view>
+                  </view>
+                  <view class="fabu" bindtap="fbpl">
+                          发布
+                  </view>
+                </view>
+            </view>
+            
+        </view>
+</view>
+<!--录音模块-->
+              <view class='luyin-box' hidden="{{luyin}}">
+              <button class="yijianzhuanfa" >
+                  <image src="/images/蓝领之家/圈子/长按输入语音@2x.png" mode="widthFix"  class="lytu" bindlongtap='touchdown'  bindtouchend="touchup"></image>
+                  <!-- 录制时间 -->      
+                  <view class='time_view'>{{jstime}}秒</view>
+
+              </button>
+              </view>

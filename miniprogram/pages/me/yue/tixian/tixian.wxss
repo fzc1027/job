@@ -1,0 +1,238 @@
+.yue{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50rpx;
+  border-radius: 20rpx;
+}
+/*零钱图标*/
+.yue1{
+  width: 90%;
+  height: 700rpx;
+  display: flex;
+  flex-direction: culum;
+  justify-content:center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 5px 5px 5px #477CFE;
+}
+/*上方蓝色背景图*/
+.tu{
+  width:100%;
+  height: 20%;
+  border: 1rpx #477CFE solid;
+  background-color: #477CFE;
+  display: flex;
+  flex-direction: culum;
+  justify-content:center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.where{
+  width:100%;
+  height: 50%;
+  border: 1rpx #477CFE solid;
+  background-color: #477CFE;
+  display: flex;
+  flex-direction: culum;
+  justify-content:flex-start;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 35rpx;
+  color: #fff;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.where1{
+  padding-left: 50rpx;
+  
+
+}
+.where2{
+  padding-left: 150rpx;
+  
+}
+
+.time{
+  width:100%;
+  height: 50%;
+  border: 1rpx #477CFE solid;
+  background-color: #477CFE;
+  display: flex;
+  flex-direction: culum;
+  justify-content:center;
+  align-content: center;
+  flex-wrap: wrap;
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.qian{
+  width:100%;
+  height: 50%;
+  border: 1rpx #477CFE solid;
+   display: flex;
+  flex-direction: culum;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.qian1{
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  width:100%;
+  height: 20%;
+  border: 1rpx #477CFE solid;
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-end;
+  color:#000;
+
+}
+
+.qian2{
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  width:100%;
+  height: 60%;
+  border: 1rpx #477CFE solid;
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  color:#000;
+}
+/*余额输入*/
+.money{
+  width:80%;
+  height: 60%;
+  border: 1rpx #fff solid;
+  border-bottom-color: #477cfe;
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-end;
+  font-size: 70rpx;
+}
+.money1{
+  width:20%;
+  height: 100%;
+  border: 1rpx #fff solid;
+  border-bottom-color: #477cfe;
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: flex-end;
+  font-size: 70rpx;
+}
+.money2{
+  width:80%;
+  height: 100%;
+  border: 1rpx #fff solid;
+  border-bottom-color: #477cfe;
+   display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: flex-end;
+  font-size: 70rpx;
+}
+/*奖励*/
+.qian3{
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  width:100%;
+  height: 20%;
+  border: 1rpx #477CFE solid;
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+.jiangli2{
+  color: #477CFE;
+}
+
+
+/*申请按钮*/
+.wechat{
+  width:80%;
+  height:15%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  background-color: rgb(71, 254, 102);
+  color:#000;
+  border-radius: 7rpx;
+  font-size:30rpx;
+  margin-top: 50rpx;
+}
+/*弹窗*/
+
+
+.zan-dialog__container {
+  position: fixed;
+  bottom: 400rpx;
+  width: 650rpx;
+  height: 400rpx;
+  margin-left: 50rpx;
+  background: #f8f8f8;
+  transform: translateY(300%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  border-radius: 20rpx;
+  box-shadow: 0px 3px 3px 2px gainsboro;
+  display: flex;
+  flex-direction: culum;
+  justify-content:center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0%);
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

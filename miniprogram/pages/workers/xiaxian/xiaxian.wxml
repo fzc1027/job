@@ -1,0 +1,37 @@
+<view class="all">
+  <!--人力资源公司-->
+  <view class="renli">
+    <view class="gongsi">
+      <view class="touxiang">
+        <image src="/images/renliziyuan/ren.png" mode="aspectFit" class="ren"></image>
+      </view>
+      <view class="gongsiname">范仲淹的人力资源公司</view>
+      
+    </view>
+    <view class="xingji">
+      <view class="redu">
+        <image src="/images/renliziyuan/redu.png" mode="aspectFit" class="re"></image>
+      </view>
+      <view class="huobao">
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+        <image src="/images/renliziyuan/huobao.png" mode="aspectFit" class="huo"></image>
+      </view>
+    </view>
+  </view>
+  <view class="jingyan">
+        <view>简介</view>
+          <textarea class="jingyanText" placeholder="输入您的简介" bindblur="jianjie" value="{{details}}">
+          </textarea>
+  </view>
+  <!--转发二维码-->
+  <view class="erweima" bindtap="erweima">
+        <text>转发二维码</text>
+  </view>
+  <!--手动添加-->
+  <view class="add"  bindtap="add">
+        <text>手动添加</text>
+  </view>
+</view>

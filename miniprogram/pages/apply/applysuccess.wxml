@@ -1,0 +1,20 @@
+<view class="apply">
+    <view class="success">
+      <view class="apply1">   
+      恭喜已经提交职位申请
+      </view>
+      <view class="apply2">
+          <view class="apply3">
+            后续情况请在
+          </view>
+          <view class="apply4" bindtap="xinxichaxun">
+            我的信息查询
+          </view>
+      </view>
+    </view>
+    <view class="continue">
+        <view class="continue1" bindtap="continue1">
+        继续浏览其他职位
+        </view>
+    </view>
+</view>
